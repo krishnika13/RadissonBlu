@@ -1,0 +1,1070 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+:root{
+    --color:rgb(221, 221, 238);
+    --font-size:30px;
+    --h3-color:rgb(18, 18, 83);
+}
+/*------------------------------------------------------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display";
+}
+p{
+    text-align: justify;
+}
+hr{
+    width: 50%;
+    height: 2px;
+    background-color: #17154d;
+    margin-left: 20%;
+}
+/*-------------------- home page css-----------------------------*/
+body{
+    background-color: rgb(214, 214, 231);
+    transition: margin-top 0.3s ease;
+    
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    }
+    
+    
+    header{
+        margin: 0px;
+        background-color: #17154d;
+        font-family: "Philosopher";
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1%;
+        border-bottom: white;
+    }
+    @media screen and (max-width: 768px) {
+        .header {
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+                    }
+            .navlinks li{
+                display: flex;
+                flex-flow: column wrap;
+                    }
+            .navlinks li a{
+                padding: 5px;
+                font-size: 10px;
+            }
+            .navlinks li a:hover{
+                font-size: 12px;
+            }
+    }
+
+    .navlinks li{
+        display: inline-block;
+        padding: 0px 15px;
+    }
+    .navlinks li a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        background-color: #17154d;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 20px;
+        transition: all 0.3s ease 0s;
+    }
+    .navlinks li a:hover{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        background-color:rgb(255, 255, 255);
+        padding: 20px;
+        border: none;
+        font-size: 25px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    .navlinks li a:active{
+        background-color: #57008A;
+        color: #ffffff;
+        transition: all 0.3s ease 0s;
+    }
+    .logo{
+        cursor: pointer;
+        margin-right: auto;
+        width: 150px;
+    }
+    .book button{
+        margin-left: 20px;
+        cursor: pointer;
+        background-color: rgb(94, 143, 180) ;
+        text-decoration: none;
+        border-radius: 5px;
+        font-family: "Philosopher";
+        font-size: 20px;
+        padding: 11px 15px 11px 15px;
+        border:none;
+        transition: all 0.3s ease 0s;
+        color: black;
+    }
+    
+    .book button:hover{
+        cursor: pointer;
+        background-color: rgb(208, 202, 238) ;
+        text-decoration: none;
+        font-family: "Philosopher";
+        font-size: 25px;
+        padding: 20px;
+        transition: all 0.3s ease 0s;
+        border-radius: 5px;
+        color: black;
+    }
+    
+    
+    /*Dropdown Menu thingie*/
+    
+    .dropdown_menu{
+        display: none;
+        position:absolute;
+        top: 20%;
+        left: 50%;
+        width: 50%;
+        height: 0;
+        background-color:#17154d;
+        backdrop-filter: blur(15px);
+        border-radius:5px;
+        overflow: hidden;
+        transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        z-index: 300;
+    }
+    .dropdown_menu.open{
+        height: 360px;
+    }
+    .dropdown_menu li{
+        padding: 0.7rem;
+        padding: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    .dropdown_menu li a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    .dropdown_menu .book button{
+        width: 100%;
+        padding: 2%;
+        margin: 0%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    /*hamburger icon styling*/
+    .menubtn{
+        display: none;
+        cursor: pointer;
+    }
+    .menu {
+        --s: 10px; 
+        --c: rgb(255, 255, 255); 
+        
+        height: var(--s);
+        aspect-ratio: 1;
+        border: none;
+        padding: 0;
+        border-inline: calc(var(--s)/2) solid #0000; 
+        box-sizing: content-box;
+        --_g1: linear-gradient(var(--c) 20%,#0000 0 80%,var(--c) 0) 
+               no-repeat content-box border-box;
+        --_g2: radial-gradient(circle closest-side at 50% 12.5%,var(--c) 95%,#0000) 
+               repeat-y content-box border-box;
+        background: 
+          var(--_g2) left  var(--_p,0px) top,
+          var(--_g1) left  calc(var(--s)/10 + var(--_p,0px)) top,
+          var(--_g2) right var(--_p,0px) top,
+          var(--_g1) right calc(var(--s)/10 + var(--_p,0px)) top;
+        background-size: 
+          20% 80%,
+          40% 100%;
+        position: relative;
+        clip-path: inset(0 25%);
+        -webkit-mask: linear-gradient(90deg,#0000,#000 25% 75%,#0000);
+        cursor: pointer;
+        transition: 
+          background-position .3s var(--_s,.3s), 
+          clip-path 0s var(--_s,.6s);
+        -webkit-appearance:none;
+        -moz-appearance:none;
+        appearance:none;
+      }
+      .menu:before, 
+      .menu:after {
+        content:"";
+        position: absolute;
+        border-radius: var(--s);
+        inset: 40% 0;
+        background: var(--c);
+        transition: transform .3s calc(.3s - var(--_s,.3s));
+      }
+      
+      .menu:checked {
+        clip-path: inset(0);
+        --_p: calc(-1*var(--s));
+        --_s: 0s;
+      }
+      .menu:checked:before {
+        transform: rotate(45deg);
+      }
+      .menu:checked:after {
+        transform: rotate(-45deg);
+      }
+      .menu:focus-visible {
+        clip-path: none;
+        -webkit-mask: none;
+        border: none;
+        outline: 2px solid var(--c);
+        outline-offset: 5px;
+      }
+      
+    @media screen and (max-width:1300px) {
+        .navlinks, .book button{
+            display: none;
+        }
+        .menubtn{
+            display: block;
+        }
+        .dropdown_menu{
+            display: block;
+        }
+    }
+    
+    
+/*---------------------------------------------------------------------------*/
+#mainimage{
+    width:100%; 
+    height:450px;
+    margin: 0px 0px; 
+}
+
+@media (max-width: 768px) {
+    #mainimage {
+        max-width: 100%; 
+        height: auto;
+    }
+}
+
+.imgtext{ /*id of the text inside main images */
+    text-align: center; 
+    position:absolute; 
+    top: 40%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 60px; 
+    font-family:"Cormorant", serif; 
+    text-transform: uppercase; 
+    font-weight: 700px;; 
+    letter-spacing:5px; 
+    color:var(--color)
+    } 
+
+    @media (max-width: 768px) {
+        .imgtext {
+            font-size: 30px; 
+            top: 25%;
+        }
+    }
+
+   h1{
+    text-align: center; 
+    color: rgb(19, 19, 53);
+    font-size: 40px;
+    } 
+
+    h2{
+        text-align: center;
+        color:rgb(45, 45, 114) ;
+        font-size: 30px;
+    }
+
+    @media screen and(width:768px) {
+        h2{ 
+            font-size: 10px;
+
+        } 
+    }
+
+    h3{
+        text-align: center;
+        color: var(--h3-color);
+    }
+
+    p{
+    font-size:20px;
+    margin: 2% 2%;
+    text-align: center;
+   
+    }
+
+    @media screen and (width:768px) {
+        p{
+            font-size: 10px;
+            text-align: justify;
+            margin: 0;
+        }  
+    }
+
+.whyus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #points{ /*why us*/
+        font-size: 50px; 
+        font-family:'Times New Roman'; 
+        text-align:center; 
+        color:rgb(47, 47, 131); 
+        text-transform: uppercase;
+        margin: 0 3%;   
+        background-color: rgb(183, 183, 207); 
+        width:50%;
+        justify-content: center;
+        border: #070524 5px double;
+    
+        } 
+
+        @media (max-width: 768px) {
+            #points {
+                font-size: 40px; 
+                width: 80%; 
+                margin: 0 ; 
+            } }
+    
+
+    #points li{
+        padding: 1%;
+    }
+    .list{ 
+        text-align:left; 
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+        text-transform: lowercase; 
+        color: rgb(21, 21, 83); 
+        margin-left: 7%; 
+        justify-content:left; 
+        font-size: 40%; 
+        }
+       
+
+    
+#ballroom-info{
+    width: 80%;
+    height: 550px;
+    margin-left: 1%;
+    text-align: center;
+    border: 2px solid rgb(190, 195, 221);
+}
+
+@media screen and (max-width: 768px) {
+    #ballroom-info {
+        width: 90%; 
+        height:auto ;
+        margin-left: 0;
+        
+    }
+
+    #ballroom-info:hover{
+        width: 100%;
+    }
+    }
+
+  .ballimgcon{ 
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:center ;
+    align-items: center;
+    }
+
+  .ballroomimg {
+     position: relative;
+     float: left;
+     width: 90%;
+     height:300px;
+     padding: 2%;
+     margin-left: 2%;
+     }
+
+     @media screen and (max-width:768px) {
+        .ballimgcon{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content:center ;
+            align-items: center;
+        }
+        .ballroomimg {
+            position: relative;
+            width: 100%;
+            height:auto;
+            padding: 1%;
+            margin-left:0 ;
+            left: 0;
+            }        
+    }
+
+#subimage{ /*images of the sub sections*/
+    width: 50%;
+    height:auto;
+    margin-left: 25%;
+    align-content: center;
+    transition:transform.2s ;
+    border-radius: 7%;
+}
+
+#subimage:hover{
+    transform: scale(1.2);
+}
+
+@media screen and (width:768px) {
+    #subimage{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }   
+}
+
+@media screen and (max-width:480px){
+    #subimage{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+}
+
+#features{
+    font-size: 30px;
+    color: rgb(35, 35, 83);
+    font-weight: 100; 
+}
+
+li{
+    text-align: justify;
+    justify-content: center;
+}
+.keypoints{
+    padding: 0 2% 0 2%;
+}
+.keycon{
+    display: flex;
+    justify-content: center;
+    padding: 0 2% 0 2%;
+}
+
+.imgcontainer{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.imgcontainer .img  {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 50%;
+    padding: 5%;
+    height: 300px;
+    border: solid #ffffff 5px;
+    animation:funcslide 10s infinite both;
+}
+@keyframes funcslide{
+    0% {background:  url(./set_taylor_swift_blank_space9.webp) center center/cover no-repeat;}
+  50%  {background:  url(./taylor_swift_103474.webp) center center/cover no-repeat;}
+  100%   {background:  url(./tayyy\ tayyy.png) center center/cover no-repeat;}}
+
+
+/*--------------------------------------offer page css----------------------------------------------------------------*/
+.abouttext{
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: var(--h3-color);
+}
+
+@media screen and(width:768px){
+    .abouttext{
+        font-size: 2%;
+        text-align: justify;
+       
+    } 
+}
+
+@media screen and (width:468px) {
+    .abouttext{
+        font-size: 2%;
+        text-align: justify;
+    }
+    
+}
+
+#offerimg {
+  
+    width: 100%;
+    height: auto;
+    margin: 0 2%;
+    padding: 1%;
+}
+
+@media screen and (max-width: 768px) {
+    #offerimg {
+        width: 100%;
+        height: auto;
+        margin: 0 ;
+        display: flex;
+        float:inline-start;
+    }
+
+    .offerconcon{
+        height: auto;
+        font-size: 10px;
+    }
+    }
+    
+.offerconcon{
+    background-color:rgb(224, 220, 220);
+    display: flex;
+    flex-flow: row nowrap;
+}
+.offercontainer{
+    position: relative;
+    background-color: rgb(224, 220, 220);;
+    width: 50%;
+    padding: 2%;
+    display: flex;
+    flex-flow: row wrap;
+  
+}
+
+
+
+
+@media screen and(width:480px) {
+    .offerconcon{
+        max-width: 100%; 
+        display: none;
+    }
+}
+
+#overlay{  
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    height: auto;
+    width: 75%;
+    margin: 20% 12% ;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(224, 220, 220);
+    height: auto;
+}
+
+@media screen and(width:768px) {
+    
+#overlay {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+} 
+}
+
+#overlay p{
+    font-size: 130%;   
+}
+
+@media screen and (max-width:768px) {
+    #overlay p{
+        font-size: 8px;   
+    }
+}
+
+
+.booklink{
+
+    color: rgb(10, 0, 34);
+    padding: 5px;
+    margin-right: 4%;
+    text-decoration: none;
+    float: right;
+}
+.booklink:hover{
+    background-color: #4c4a85;
+}
+
+.offercontainer:hover #overlay{
+    opacity: 0.8;
+
+}
+
+.ribbon {
+    width: 60px;
+    font-size: 14px;
+    padding: 4px;
+    position: absolute;
+    right: -25px;
+    top: -12px;
+    text-align: center;
+    border-radius: 25px;
+    transform: rotate(20deg);
+    background-color: #ff9800;
+    color: white;
+  }
+/*--------------------------------restaurants page css-------------------------------------------------------------------------------------*/
+
+#restimg{
+    width: 80%;
+    height: 450px;
+    padding: 2%;
+    margin-left: 5%;
+}
+@media screen and(max-width:768px){
+    restimg{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+       
+    }   
+}
+
+.restcontainer{
+    position: relative;
+    width: 100%;
+    margin: 1% 1%;
+}
+
+
+@media screen and (max-width:768px) {
+.restcontainer{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:center ;
+    align-items: center;
+    margin: 0;
+    
+    
+} }
+
+.restpara {
+    position: absolute;
+    opacity: 0.7;
+    bottom: 0;
+    left: 17%; 
+    width: 60%;
+    margin-bottom: 10%;
+    background-color: rgb(229, 230, 231);
+}
+
+
+@media screen and (max-width: 768px) { 
+    .restpara { 
+        width: 50%; 
+        height: auto; 
+        left: 25%;
+        bottom: 5%;
+        margin-left: 20px;
+        padding: 0;
+        font-size: 10px;
+        text-align: justify;
+       
+    }
+}
+@media screen and (max-width: 468px) { 
+    .restpara { 
+        width: 90%; 
+        height: auto; 
+        font-size:small ;
+        left: 0;      
+       
+    }
+}
+
+.restcontainer:hover {
+   transform: scale(1.1);
+
+}
+
+.menulink{
+    text-decoration: none;
+    margin-bottom: 50%;
+    text-align: center;
+    color: #070524;
+
+}
+.menulink:hover{
+    background-color: #c5c5d3;
+    border-radius: 2%;
+}
+/*------------------ for the event page link---------------------------*/
+.eventpage-section li{
+    list-style: none;   
+}
+
+.eventpage-section li:hover{
+    background-color: #8fa5b1;
+    padding: 2px;
+
+}
+
+.eventpage-section li a{
+    text-transform: uppercase;
+    margin-left: 20%;
+    text-align: left;
+    text-decoration: none;
+}
+
+.eventpage-section{
+    width: 40%;
+    margin-left: 30%;
+    text-align: justify;
+    margin-bottom: 4%;
+}
+/*---------------------------------------------adventures page css----------------------------------------------------*/
+.video{
+    width: 50%;
+    height:auto;
+    margin-left:20%;
+}
+@media screen and (width:768px) {
+    .video
+    { width: 100%;
+    height: auto;
+    margin: 0;
+    }   
+}
+#adven-image{
+    width: 70%;
+    height: 300px;
+    margin-left:15%;
+    border-radius: 5%;
+}
+@media screen and (max-width:768px) {
+    #adven-image{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+}
+
+#adven-para-right {
+    width: 100%; 
+    text-align: justify;
+    background-color: rgb(195, 191, 214);
+    border: 2px hidden; 
+    padding: 1%;
+    transition: transform.2s;
+   
+}
+#adven-para-right:hover{
+    transform: scale(1.1);
+    background-color: rgb(25, 20, 49);
+    color: white;
+    align-content: center;
+   
+}
+
+@media screen and (max-width: 768px) { 
+    #adven-para-right {
+        width: 100%; 
+        float: none; 
+        margin: 0; 
+        font-size: smaller;
+       align-content: center;
+    }
+}
+
+.adventureinfo{
+    width: 70%;
+    height:90% ;
+    float: left;
+    padding: 15px;
+    margin-left:10% ; 
+}
+
+#adven-book{
+    width: 50%;
+    margin-top: 2%;
+}
+
+/*---------------gallery page css--------------------------------------------------------------------------------*/
+
+#gallerynav a {
+    text-decoration:none;
+    padding: 10px;
+    margin: 20px 10px;
+    font-size: 20px;
+}
+.galcon2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#gallerynav{
+    text-align: center;
+    font-size: 1vw;
+}
+.gallerycon{
+    background-color: rgb(146, 158, 193);
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+a:hover {
+    color: #1a1855;
+}
+.gallerysec{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#gallerypic{
+    width: 500px;
+    height: 350px;
+    margin-top: 5%;
+}
+
+@media screen and (max-width:500px) {
+    #gallerypic{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*-------------------------------------branch page css-----------------------------------------------------------*/
+#branchimg{
+    width:50%;
+    height: 300px;
+    margin-left: 24%;
+    margin-bottom: 2%;
+    border-radius: 40px;
+    transition: transform.2s;  
+}
+
+#branchimg:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    #branchimg {
+        margin-left: 8%; 
+        width: 80%;
+        height: auto;
+    }}
+
+
+.branchinfo{
+    width: 90%;
+    margin: 5%;
+    height: auto;
+    background-color:rgb(191, 187, 207) ;  
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .branchinfo {
+        height: auto;
+        font-size: 10px;
+    }}
+
+
+#location{ /*the map thingie*/
+     width: 100%;
+     height: 200px;
+     margin-bottom: 5%;
+     padding-bottom:2% ;
+     border: 1px solid black;
+     display: flex;
+     transition: transform.2s;
+}
+
+#location:hover{
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+    #location {
+        width: 100%;
+        
+    }}
+            
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 2%;
+    margin-left: 9%;
+    margin-bottom: 3%;
+    font-size: 2vw;
+}
+
+
+th, td {
+    padding: 1%;
+    text-align: justify;
+    border: 2px solid  #0c4e72;
+    background-color: #b7cfdb;
+}
+
+th {
+    background-color: #0077b6;
+    color: #ffffff;
+}
+tr{
+    border: 1px solid  #0077b6;
+}
+
+
+
+/*------------------room page css-----------------------------------------------------------------------------------*/
+#roomsec{ 
+    border: 1px solid rgb(35, 12, 77); 
+    background-color: rgb(191, 187, 207);
+    margin-left: 5%;
+    margin-bottom: 4%;
+    height: auto; 
+    width: 90%;
+    transition: transform.2s;
+    border-radius: 20px;
+} 
+
+@media (max-width: 768px) {
+    #roomsec {
+        width: 100%; 
+        margin: 0; 
+        border-radius: 0; 
+    }
+}
+
+#roomsec:hover{
+    transform: scale(1.1);
+}
+
+#roomimg{ 
+    float: left; 
+    margin:3% 3%; 
+    width: 50%; 
+    height: 300px;
+} 
+
+#roompoint{ 
+    margin: 3% 3%; 
+    color:rgb(21, 21, 83);   
+}
+@media screen and(width:768px) {
+    #roompoint{
+        text-align: justify;
+        font-size: 20px;
+    }
+    
+}
+
+/*screen smaller than 768px*/
+@media (max-width: 768px) {
+    #roomimg {
+        width: 100%;
+        float: none;
+        margin: 0%;
+    }
+}
+
+/*screen smaller than 480px*/
+@media (max-width: 480px) {
+    #roomsec {
+        padding: 0;
+    }
+}
+/*---------------book now page css  /adventure booking page-------------------------------------------------------------------------*/
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #17162b;
+}
+
+.booknowform {
+    background-color: #d6dbe6;
+    padding: 20px;
+    border-radius: 20px;
+    border-style: groove;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+label {
+    font-weight: bold;
+}
+button {
+    background-color:#17162b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #445c77;
+    }
+    
+/*--------------------------------------------- Footer css------------------------------------------------------------- */
+#footersection {
+   
+    background-color:#17154d;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin: 0;  
+    margin-bottom: 1%; 
+}
+
+h4{
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.footer-logo img {
+    width: 150px; 
+}
+
+.footer-social a{
+    color: white;
+}
+
+button a{
+    color: #d6dbe6;
+    text-decoration: none;
+}
+  
+/*------------------------------references---------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+

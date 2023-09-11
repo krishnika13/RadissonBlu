@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radisson Blu ✩°｡🌐💿✩°｡✮🎵</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./manifest.json">
+<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="./hotel.css" type="text/css">
+</head>
+<body>
+      <!--header: contains logo and navigation buttons-->
+      <header id="header"> 
+        <!--Navigation Bar-->
+        <a href="./home page.html"><img class="logo" src="./Radisson-Logo-640x403.png" alt="logo" width="100px"></a>
+        <nav>
+            <ul class="navlinks">
+                <li><a href="./home page.html">home</a></li>
+            <li><a href="./offer page.html">offers</a></li>
+            <li><a href="./restaurents page.html">restaurants</a></li>
+            <li><a href="./adven page.html">adventures</a></li>
+            <li><a href="./gallery page.html">gallery</a></li>
+            <li><a href="./branch page.html">branches</a></li>
+            <li><a href="./rooms page.html">rooms</a></li>
+            </ul>
+        </nav>
+
+    <!--drop down nav bar--------------------------------->
+
+    <a class="book" a href="./booknow page.html" ><button>Book Now!</button></a>
+    <section class="menubtn">
+        <input type="checkbox" role="button" aria-label="Display the menu" class="menu">
+    </section>
+    <section class="dropdown_menu">
+        <li><a href="./home page.html">home</a></li>
+        <li><a href="./offer page.html">offers</a></li>
+        <li><a href="./restaurents page.html">restaurants</a></li>
+        <li><a href="./adven page.html">adventures</a></li>
+        <li><a href="./gallery page.html">gallery</a></li>
+        <li><a href="./branch page.html">branches</a></li>
+        <li><a href="./rooms page.html">rooms</a></li>
+        <li><a class="book" a href="./booknow page.html" ><button>Book Now!</button></a></li>
+    </section>
+    
+    <script>
+        const menu_btn = document.querySelector('.menubtn')
+        const menubtnICON = document.querySelector('.menu_btn input')
+        const dropmenu = document.querySelector('.dropdown_menu')
+
+        menu_btn.onclick = function(){
+            dropmenu.classList.toggle('open')
+            const isOpen = dropmenu.classList.contains('open')
+        }
+    </script>
+</header>
+ 
+
+<!--about-------------------------------------------------------------------------------->
+<section class="mainphoto">
+    <img id="mainimage" src="./419840593.jpg" alt="a picture of the hotel">
+
+    <section class="imgtext">  
+        Radission Blu Resort 
+    </section>
+</section>
+<br><br>   
+<section class="bodypart">
+    <h1> The essence of Blu</h1>
+<p>
+    In the heart of Colombo, nestled between Galle Face and the city’s busiest hub, the World Trade Centre, The Radission Blu, Colombo celebrates meticulous service through luxury experiences. 
+    <br>Centrally located for shopping, entertainment, and business, the hotel presents the finest accommodation, signature dining experiences, and world-class meeting and banqueting facilities as one of the most preferred Colombo hotels.
+</p> 
+<br>
+<!--------------------------ordered list--------------------------------------------------------------->
+<section class="whyus">
+    <ol id="points"> WHY US?
+        <li class="list">beautiful locations offering incredible views to guarantee an unforgettable stay.</li>
+        <li class="list">Our resort is the perfect escape for couples and families who are looking to experience a vacation of a lifetime.</li>
+        <li class="list">our modern and stylish rooms, each equipped with a private balcony or terrace.</li>
+        <li class="list">We are proud to form a part of the Rad Family program, where our youngest guests get a special welcome pack and can enjoy thoughtful details throughout their stay.</li>
+    </ol>
+</section>
+<!--------------------------------1st sub section/ballroom part-------------------------------------------------->
+<section class="ballroom">
+<br><br>
+<h2> Celebrate life’s special moments with elegance and style </h2>
+<p>Radisson Blu Resort, sets the scene for unparalleled sophistication. create your dream events from weddings, gala dinners, corporate events to fundraisers. <br> Our dedicated team will seamlessly organize your special event! </p>
+<br>
+<h3> OUR VENUES</h3> <br>
+        <section class="ballimgcon">
+            
+                <section id="ballroom-info">
+                    <img class="ballroomimg" src="./marriott-hong-kong-pillarless-ballroom.webp" alt="1st photo of the ballroom"> 
+                    <h2>Wonderland</h2>
+                    <p>Whether you desire a grand wedding, business meeting or conference, Wonderland is a venue for celebration. With contemporary styled golden-hued interiors. Located on the 3rd floor with natural light and views of the Colombo Harbour and Indian ocean.</p>
+                </section>
+                  <br>
+                
+                <section id="ballroom-info">
+                     <img class="ballroomimg" src="./Kempinski-Hotel-Muscat_Ballroom-01.jpg" alt="2nd photo of ballroom">
+                     <h2>The Ivy</h2>
+                     <p>Ivy ball room is a versatile space to host an event from birthday parties, weddings to business meetings with maximum seating capacity of 250. the entire space is served by the latest sophisticated lighting system with sparkling crystal chandeliers.</p>
+                </section>
+                      <br>
+
+                <section id="ballroom-info">
+                    <img class="ballroomimg" src="./f7c1a0874e98-75413229_4K.jpg" alt="3rd photo of balllroom">
+                    <h2>Lavender Haze</h2>
+                    <P>A perfect venue to create your dream events, Lavender Haze ball room opens the door to a majestic room with sparkling crystal. Located on the Ground floor (Lobby Level) with views of the sweeping lawns.</P>
+                </section>
+                          <br>
+        
+        </section>
+</section>
+<!---------------------------------------2nd sub section/meetings part------------------------------------->
+<br> <br> <br> <br>
+    <section class="meetings">
+        <h2> Meetings & Events Facilities</h2> <br>
+        <p>With four meetings rooms available, this versatile space can cater to any meeting or event. Our dedicated and enthusiastic team will ensure your event runs smoothly and to your satisfaction. All our meeting rooms are equipped with state-of-the-art technology such as a sound system and free Wi-Fi. 
+            <a href="./meeting-events.htm">click for more</a>
+        </p>
+       
+        <img id="subimage" src="./16256-147492-f75288268_3xl.webp" alt="photo of the meeting room">
+        <br>
+            <section class="keycon">
+        <section class="keypoints">
+                <ul id="features">key features</ul><br>
+                <li>4 meeting rooms</li><br>
+                <li>Additional for a fee AV equipment</li><br>
+                <li>Flip chart and markers</li><br>
+                <li>Complimentary parking</li><br>
+                <li>High-quality audiovisual equipment</li><br>
+                <li>LED/LCD projector</li><br>
+                <li>Catering service</li><br>
+            </section>
+        </section>
+<!-----------------------------------3rd sub section/restaurent and bars-------------------------------------------------------->      
+
+<h2>restaurent & bars</h2>
+<p>Radisson Blu Resort, Galle offers guests four restaurants and a rooftop bar to choose from. Enjoy a delicious dinner at Fusion overlooking the pool and terrace area or head down to The Bay for light snacks, healthy salads, and a cocktail or two. We serve a range of dishes from fresh local food to international delicacies.
+    <a href="./restaurents page.html">click for more</a>
+</p>
+  
+<img id="subimage" src="./419253688.jpg" alt="image of the bar">
+<!-----------------------------------4th sub section/gym-------------------------------------------------------------->
+<br><br>
+<h2>spa</h2>
+<p>The Radisson Blu Hotel boasts a luxurious spa that offers guests a haven of relaxation and rejuvenation. Nestled within the hotel's elegant ambiance, this spa provides a tranquil escape from the hustle and bustle of daily life.
+    <a href="./spa.htm">click for more</a> </p>
+<img class="gympic" id="subimage" src="./spa-packages.jpg" alt="image of spa">
+
+<!-----------------------------------------------5th section/wedding------------------------------------------>
+<br><br>
+<section id="wed-info-para">
+    <h1 id="wed-head">Weddings At Radisson</h1>
+    <p> A Radisson wedding is the epitome of elegance and sophistication. With its luxurious venues, impeccable service, and attention to detail, Radisson Hotels provide the perfect backdrop for your dream wedding. Whether you envision an intimate gathering or a grand celebration, <br> <br>Radisson's experienced wedding planners will work closely with you to create a personalized experience that reflects your unique love story. <br> <br> From stunning ballrooms and picturesque outdoor settings to exquisite cuisine and top-notch amenities, a Radisson wedding promises an unforgettable day filled with cherished memories. Let Radisson transform your wedding dreams into a reality, ensuring that your special day is nothing short of magical.
+        <a href="./weddings.htm">click for more</a></p>
+    
+</section>
+
+<section class="imgcontainer">
+    <section class="img"></section>
+</section>
+<!-----------------------------------footer part-------------------------------------------------------------->
+<footer>
+    <section id="footersection">
+        <section class="footer-logo">
+            <img src="./Radisson-Logo-640x403.png" alt="logo of the radisson hotel">
+
+        </section>
+
+
+        <section id="contact-info">
+            <h4>contact Radission hotel</h4>
+            <p>+94 912 030 500</p>
+            <p>info.galle@radissonblu.com</p>
+            <p>523C, Colombo Road, Gintota, Galle,80280,Sri Lanka</p>
+
+            <button > 
+                <a href="./faq.htm">for more help </a>
+            </button>
+        </section>
+        <br> <br>
+
+        <section class="footer-social">
+            <h4>Follow Us</h4> <br>
+            <a href="./download.htm">Instagram |</a>
+            <a href="./download (1).htm">Facebook | </a>
+            <a href="./radissonhotelgroup.htm">Youtube</a> 
+        </section>
+
+
+                <section class="footer-copyright">
+                     <p>&copy; 2023 radisson blu. All rights reserved.</p>
+                </section>
+        </section>
+   
+</footer>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

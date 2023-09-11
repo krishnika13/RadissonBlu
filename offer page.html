@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radisson Blu ✩°｡🌐💿✩°｡✮🎵</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./manifest.json">
+<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#000000">
+
+    <link rel="stylesheet" href="./hotel.css" type="text/css">
+</head>
+<body>
+     <!--header: contains logo and navigation buttons-->
+     <header id="header">
+        <!--Navigation Bar-->
+        <a href="./home page.html"><img class="logo" src="./Radisson-Logo-640x403.png" alt="logo" width="100px"></a>
+        <nav>
+            <ul class="navlinks">
+                <li><a href="./home page.html">home</a></li>
+            <li><a href="./offer page.html">offers</a></li>
+            <li><a href="./restaurents page.html">restaurants</a></li>
+            <li><a href="./adven page.html">adventures</a></li>
+            <li><a href="./gallery page.html">gallery</a></li>
+            <li><a href="./branch page.html">branches</a></li>
+            <li><a href="./rooms page.html">rooms</a></li>
+            </ul>
+        </nav>
+        <a class="book" a href="./booknow page.html" ><button>Book Now!</button></a>
+        <section class="menubtn">
+            <input type="checkbox" role="button" aria-label="Display the menu" class="menu">
+        </section>
+        <!---------------------drop down----------------------->
+        <section class="dropdown_menu">
+            <li><a href="./home page.html">home</a></li>
+            <li><a href="./offer page.html">offers</a></li>
+            <li><a href="./restaurents page.html">restaurants</a></li>
+            <li><a href="./adven page.html">adventures</a></li>
+            <li><a href="./gallery page.html">gallery</a></li>
+            <li><a href="./branch page.html">branches</a></li>
+            <li><a href="./rooms page.html">rooms</a></li>
+            <li><a class="book" a href="./booknow page.html" ><button>Book Now!</button></a></li>
+        </section>
+        <script>
+            const menu_btn = document.querySelector('.menubtn')
+            const menubtnICON = document.querySelector('.menu_btn input')
+            const dropmenu = document.querySelector('.dropdown_menu')
+
+            menu_btn.onclick = function(){
+                dropmenu.classList.toggle('open')
+                const isOpen = dropmenu.classList.contains('open')
+            }
+        </script>
+   </header>
+  
+<!--about-------------------------------------------------------------------------------->
+<section class="mainphoto">
+    <img id="mainimage" src="./382638_ImageGalleryLightboxLarge.jpg" alt="a picture of the hotel">
+
+    <section class="imgtext">  
+        offers & deals
+    </section>
+</section>
+
+<section class="bodypart"> <br><br>
+     <p class="abouttext"> "Unlock Exceptional Savings: <br> Dive into a World of Exclusive Packages and Deals on Our Offers Page"</p>
+     <p>Whether you’re looking for last-minute deals on business accommodations or planning for a weekend getaway, you’ll find the best offers for the Radisson Blu Resort, Galle right here. Take advantage of special rates and extra perks with these fantastic hotel packages, guaranteed to make your stay in Galle more affordable and enjoyable</p>
+
+     <!-----------------------------------------------------------------------------------------> 
+    <section class="offerconcon">
+        <section class="offercontainer">
+         <img id="offerimg" src="./istockphoto-155161088-170667a.webp" alt="main image of the offers page">
+
+            <section id="overlay">
+                <h3>Earn 10,000 bonus points <span class="ribbon">NEW</span></h3>
+                <p >Book a room before december 31, earn 10,000 bonus points.
+                <a class="booklink" href="./booknow page.html">book now</a></p>
+            </section>
+        </section>
+
+        <section class="offercontainer">
+            <img id="offerimg" src="./419309992.jpg" alt="image of a swimmingpool">
+
+            <section id="overlay">
+                <h3>First time's a charm</h3>
+                <p>Earn 3,000 bonus points for your first booking 
+                <a class="booklink" href="./booknow page.html">book now</a></p>
+            </section>
+        </section>
+</section>
+<section class="offerconcon">
+        <section class="offercontainer">
+            <img id="offerimg" src="./download.jpg" alt="photo of a room in hotel">
+
+            <section id="overlay">
+                <h3>Plan & Save</h3>
+                <p>Book a stay and pay in advance to save up to 25%.
+                <a class="booklink" href="./booknow page.html">book now</a></p>
+            </section>
+        </section>
+
+        <section class="offercontainer">
+            <img id="offerimg" src="./istockphoto-1319453433-170667a.webp" alt="photo of the hotel">
+
+            <section id="overlay">
+                <h3>Members Only Rate</h3>
+                <p>Members save up to 10% more on stays worldwide.
+                <a class="booklink" href="./booknow page.html">book now</a></p>
+            </section>
+        </section>
+    </section>
+</section>
+
+
+<!-----------------------------------------------------footer thingie--------------------------------------->
+
+<footer>
+    <section id="footersection">
+        <section class="footer-logo">
+            <img src="./Radisson-Logo-640x403.png" alt="logo of the radisson hotel">
+
+        </section>
+
+
+        <section id="contact-info">
+            <h4>contact Radisson hotel</h4>
+            <p>+94 912 030 500</p>
+            <p>info.galle@radissonblu.com</p>
+            <p>523C, Colombo Road, Gintota, Galle,80280,Sri Lanka</p>
+
+            <button> 
+                <a href="./faq.htm">for more help </a>
+            </button>
+        </section>
+        <br> <br>
+
+
+        <section class="footer-social">
+            <h4>Follow Us</h4> <br>
+            <a href="./download.htm">Instagram |</a>
+            <a href="./download (1).htm">Facebook | </a>
+            <a href="./radissonhotelgroup.htm">Youtube</a> 
+        </section>
+
+
+        <section class="footer-copyright">
+            <p>&copy; 2023 radisson blu. All rights reserved. </p>
+        </section>
+    </section>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
