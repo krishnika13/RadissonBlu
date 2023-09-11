@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radisson Blu ✩°｡🌐💿✩°｡✮🎵</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./manifest.json">
+<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#000000">
+
+    <link rel="stylesheet" href="./hotel.css" type="text/css">
+</head>
+<body>
+     <!--header: contains logo and navigation buttons-->
+     <header id="header">
+        <!--Navigation Bar-->
+        <a href="./home page.html"><img class="logo" src="./Radisson-Logo-640x403.png" alt="logo" width="100px"></a>
+        <nav>
+            <ul class="navlinks">
+                <li><a href="./home page.html">home</a></li>
+            <li><a href="./offer page.html">offers</a></li>
+            <li><a href="./restaurents page.html">restaurents</a></li>
+            <li><a href="./adven page.html">adventures</a></li>
+            <li><a href="./gallery page.html">gallery</a></li>
+            <li><a href="./branch page.html">branches</a></li>
+            <li><a href="./rooms page.html">rooms</a></li>
+            </ul>
+        </nav>
+        <a class="book" a href="./booknow page.html" ><button>Book Now!</button></a>
+        <section class="menubtn">
+            <input type="checkbox" role="button" aria-label="Display the menu" class="menu">
+        </section>
+        <!------------------drop down------------------------------------>
+        <section class="dropdown_menu">
+            <li><a href="./home page.html">home</a></li>
+            <li><a href="./offer page.html">offers</a></li>
+            <li><a href="./restaurents page.html">restaurents</a></li>
+            <li><a href="./adven page.html">adventures</a></li>
+            <li><a href="./gallery page.html">gallery</a></li>
+            <li><a href="./branch page.html">branches</a></li>
+            <li><a href="./rooms page.html">rooms</a></li>
+            <li><a class="book" a href="./booknow page.html" ><button>Book Now!</button></a></li>
+        </section>
+        <script>
+            const menu_btn = document.querySelector('.menubtn')
+            const menubtnICON = document.querySelector('.menu_btn input')
+            const dropmenu = document.querySelector('.dropdown_menu')
+
+            menu_btn.onclick = function(){
+                dropmenu.classList.toggle('open')
+                const isOpen = dropmenu.classList.contains('open')
+            }
+        </script>
+   </header>
+ 
+   
+<!--about-------------------------------------------------------------------------------->
+<section class="mainphoto">
+    <img id="mainimage" src="./Tak2-CMSTemplate_IrMZHla.width-1500.jpg" alt="a picture of the restaurent">
+
+    <section class="imgtext">  
+        our restaurants
+    </section>
+</section>
+<section class="bodypart"> <br><br>
+     <p class="abouttext">"Culinary Excellence Awaits: Delight Your Senses at our restaurants, <br> Where Every Dish is a Masterpiece"</p>
+     <p>Radisson Blu Resort, Galle hosts four on-site restaurants and a rooftop bar, serving a range of international cuisines, breakfast buffets, and refreshing drinks. Enjoy a delicious dinner at Fusion overlooking the pool and terrace area or head down to The Bay for light snacks, healthy salads, and a cocktail or two. As the day comes to a close, Bommu Rooftop Bar is the perfect place to be, offering stunning views and a buzzing social vibe.</p>
+
+<!---------------------------------------------------------------------------------------------------------------------->
+<section class="restcontainer"> <br>
+    <h2>Fusion</h2>
+    <img id="restimg" src="./16256-147492-f75991554_3xl.jpg" alt="">
+     
+        <section class="restpara">
+            <p>Fusion offers guests an all-day dining experience. Enjoy breakfast, lunch, or dinner overlooking the pool and terrace area and watch our team do what we do best with our open kitchen and action stations. Fusion serves up international cuisine and Asian favorites, inspired by Asian street food <br> <h3>Opening hours</h3><p> Daily 6:30 am - 10:30 pm</p></p>
+              <p>  <a class="menulink" href="./Website-New-Breakfast.pdf">our menu</a> </p>
+
+        </section>
+        
+</section>
+
+<section class="restcontainer">
+    <h2>The Bay</h2>
+    <img id="restimg"  src="./pexels-pixabay-262978.jpg" alt="">
+     
+        <section class="restpara">
+            <p>The Bay is our casual diner with a fantastic menu of healthy salads and soups, complemented with cocktails and drinks that will put a smile on everyone's face. As the sun dips in the early evening, the deck is perfect for a relaxing sundowner with friends or family. <br> <h3>Opening hours</h3> <p>Daily 10:00 am - 7:00 pm </p></p>
+              <p> <a class="menulink" href="./Radisson-Limerick-Brasserie-Lunch-Menu.pdf">our menu</a> </p>
+        </section>
+
+</section>
+<br> <br> <br>
+
+<section class="restcontainer">
+    <h2>Bommu Rooftop Bar</h2>
+    <img id="restimg" src="./pexels-nastyasensei-331107.jpg" alt="">
+     
+        <section class="restpara">
+            <p>Welcome to Bommu Rooftop Bar—the ideal place for a refreshing drink and to appreciate breathtaking views of the Indian Ocean at night. Indulge in our tasty selection of cocktails and beverages. To satisfy your appetite, order delicious tapas dishes inspired by local and international flavors. <h3>Opening hours</h3><p> Daily 11:00 am - 10:00 pm</p></p>
+              <p>  <a class="menulink" href="./Radisson-Limerick-Brasserie-Drinks-Menu.pdf">our menu</a></p>
+        </section>
+
+</section>
+<br> <br> <br>
+
+<section class="restcontainer">
+    <h2>Sforno Poolside Trattoria</h2>
+    <img id="restimg" src="./istockphoto-1181456782-170667a.webp" alt="">
+     
+        <section class="restpara">
+            <p>Sforno Poolside Trattoria prepares classic Italian dishes from our local cinnamon wood oven. Enjoy delicious artisanal pizzas with varieties of fresh toppings. Tradition, flavor, and our iconic large brick oven that stands at the center of our poolside trattoria brings Italian homestyle cuisine to you. <h3>Opening hours </h3> <p>Daily 5:00 pm - 12:00 am</p></p>
+                <p> <a class="menulink" href="./Cal 27 Menu Insert_curves.pdf">our menu</a></p>
+        </section>
+
+</section>
+<br> <br> <br>
+<section class="eventpage-section">
+    <ul> <h2>our upcoming events!</h2> <br>
+        <li><a href="./event page 1.html"><h3>bbq night & dj</h3></a> </li><br>
+        <li> <a href="./event page 2.html"><h3>radisson blu's food festival </h3> </a></li> <br>
+    </ul>
+</section>
+
+<!-----------------------------------footer part-------------------------------------------------------------->
+<footer>
+    <section id="footersection">
+        <section class="footer-logo">
+            <img src="./Radisson-Logo-640x403.png" alt="logo of the radisson hotel">
+
+        </section>
+
+
+        <section id="contact-info">
+            <h4>contact Radission hotel</h4>
+            <p>+94 912 030 500</p>
+            <p>info.galle@radissonblu.com</p>
+            <p>523C, Colombo Road, Gintota, Galle,80280,Sri Lanka</p>
+
+            <button> 
+                <a href="./faq.htm">for more help </a>
+            </button>
+        </section>
+        <br> <br>
+
+        <section class="footer-social">
+            <h4>Follow Us</h4> <br>
+            <a href="./download.htm">Instagram |</a>
+            <a href="./download (1).htm">Facebook | </a>
+            <a href="./radissonhotelgroup.htm">Youtube</a> 
+        </section>
+
+        <section class="footer-copyright">
+            <p>&copy; 2023 radisson blu. All rights reserved.</p>
+        </section>
+    
+    </section>
+   
+</footer>
+
+</body>
+</html>
+          

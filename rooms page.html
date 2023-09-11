@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radisson Blu ✩°｡🌐💿✩°｡✮🎵</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./manifest.json">
+<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#000000">
+
+    <link rel="stylesheet" href="./hotel.css" type="text/css">
+</head>
+<body>
+     <!--header: contains logo and navigation buttons-->
+     <header id="header">
+        <!--Navigation Bar-->
+        <a href="./home page.html"><img class="logo" src="./Radisson-Logo-640x403.png" alt="logo" width="100px"></a>
+        <nav>
+            <ul class="navlinks">
+                <li><a href="./home page.html">home</a></li>
+            <li><a href="./offer page.html">offers</a></li>
+            <li><a href="./restaurents page.html">restaurants</a></li>
+            <li><a href="./adven page.html">adventures</a></li>
+            <li><a href="./gallery page.html">gallery</a></li>
+            <li><a href="./branch page.html">branches</a></li>
+            <li><a href="./rooms page.html">rooms</a></li>
+            </ul>
+        </nav>
+        <a class="book" a href="./booknow page.html" ><button>Book Now!</button></a>
+        <section class="menubtn">
+            <input type="checkbox" role="button" aria-label="Display the menu" class="menu">
+        </section>
+        <!-----------------drop down----------------------------------->
+        <section class="dropdown_menu">
+            <li><a href="./home page.html">home</a></li>
+            <li><a href="./offer page.html">offers</a></li>
+            <li><a href="./restaurents page.html">restaurents</a></li>
+            <li><a href="./adven page.html">adventures</a></li>
+            <li><a href="./gallery page.html">gallery</a></li>
+            <li><a href="./branch page.html">branches</a></li>
+            <li><a href="./rooms page.html">rooms</a></li>
+            <li><a class="book" a href="./booknow page.html" ><button>Book Now!</button></a></li>
+        </section>
+        <script>
+            const menu_btn = document.querySelector('.menubtn')
+            const menubtnICON = document.querySelector('.menu_btn input')
+            const dropmenu = document.querySelector('.dropdown_menu')
+
+            menu_btn.onclick = function(){
+                dropmenu.classList.toggle('open')
+                const isOpen = dropmenu.classList.contains('open')
+            }
+        </script>
+   </header>
+   <!--about-------------------------------------------------------------------------------->
+<section class="mainphoto">
+    <img id="mainimage" src="./419255723.jpg" alt="a picture of the hotel">
+
+    <section class="imgtext">  
+        accommodation
+    </section>
+</section>
+<section class="bodypart"> <br><br>
+     <p class="abouttext"> "Your Comfort, Your Choice: <br> Explore Our Range of Exceptional Rooms"</p>
+     <p>Radisson Blu Resort, Galle boasts 172 stylish and charming rooms, all featuring a private balcony or terrace for your enjoyment. Admire breathtaking views of the Indian Ocean from the comfort of your room and make yourself at home with thoughtful amenities such as free Wi-Fi and a minibar, available at your convenience.</p>
+</section>
+<!------------------------------------------------------------------------------------------------->
+
+<h3>ROOM TYPES</32>
+
+<section id="roomsec">
+    <img id="roomimg" src="./16256-124035-f72293654_4k.jpg" alt="photo of the hotel room">
+    <h2> Deluxe Rooms</h2>
+    <p>Enjoy a comfortable stay with your choice of bed and a wide variety of modern amenities in our Deluxe Room – City View. Brew yourself a hot drink from the coffee and tea making facilities provided and stay connected with free Wi-Fi. The Deluxe Room - City View also features a private balcony boasting excellent view.</p>
+     
+    <section id="roompoint">
+        <ul> Room Features</ul>
+        <li>Air Conditioning</li>
+        <li>WiFi facilities</li>
+        <li>Mini Fridge</li>
+
+        
+    <a href="./booknow page.html">
+        <button id="roombutton">book now</button> 
+      </a>   
+
+    </section>
+
+</section>
+    <br> <br>
+
+    <section id="roomsec">
+        <img id="roomimg" src="./485560121.jpg" alt="photo of the hotel room">
+        <h2>Premium Rooms</h2>
+        <p>Nestled on a higher level floor, the Premium Room - Sea View offers relaxation and breathtaking vistas of the Indian Ocean. The room features a balcony where comfort and tranquility merge to create an unforgettable experience.</p>
+        
+        <section id="roompoint">
+            <ul> Room Features</ul>
+            <li>Air Conditioning</li>
+            <li>WiFi facilities</li>
+            <li>Mini Fridge</li>
+            <li>Cable TV</li>
+            <li>Work Desk</li>
+
+            <a href="./booknow page.html">
+                <button id="roombutton">book now</button> 
+              </a>
+        </section>
+       
+    </section>
+
+    <br> <br>
+<section id="roomsec">
+    <img id="roomimg" src="./98754cf8_z.webp" alt="photo of the hotel room">
+       <h2> Suites</h2>
+    <p>Perfect for couples and small families looking for extra space, our Suite – City View offers a comfortable night's sleep and a large private terrace for you to enjoy at your leisure.</p>
+    
+    <section id="roompoint">
+        <ul> Room Features</ul>
+        <li>Air Conditioning</li>
+        <li>WiFi facilities</li>
+        <li>Mini Bar</li>
+        <li>Cable TV</li>
+        <li>Work Desk</li>
+    
+        <a href="./booknow page.html">
+            <button id="roombutton">book now</button> 
+          </a>
+    
+    </section>
+
+</section>
+
+
+
+<!-------------------------------------------------footer---------------------------------------------------->
+<footer>
+    <section id="footersection">
+        <section class="footer-logo">
+            <img src="./Radisson-Logo-640x403.png" alt="logo of the radisson hotel">
+
+        </section>
+
+        <section id="contact-info">
+            <h4>contact Radission hotel</h4>
+            <p>+94 912 030 500</p>
+            <p>info.galle@radissonblu.com</p>
+            <p>523C, Colombo Road, Gintota, Galle,80280,Sri Lanka</p>
+
+            <button > 
+                <a href="./faq.htm">for more help </a>
+            </button>
+        </section>
+        <br> <br>
+
+        
+        <section class="footer-social">
+            <h4>Follow Us</h4> <br>
+            <a href="./download.htm">Instagram |</a>
+            <a href="./download (1).htm">Facebook | </a>
+            <a href="./radissonhotelgroup.htm">Youtube</a> 
+        </section>
+
+        <section class="footer-copyright">
+            <p>&copy; 2023 radisson blu. All rights reserved. </p>
+        </section>
+    
+    </section>
+   
+</footer>
+
+
+
+   
+
+</body>
+</html>
